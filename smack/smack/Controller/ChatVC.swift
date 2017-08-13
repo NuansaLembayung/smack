@@ -21,7 +21,7 @@ class ChatVC: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
     }
 
-    @IBAction func menuBtnTapped(_ sender: Any) {
+    @IBAction func menuBtnPressed(_ sender: Any) {
         self.revealViewController().revealToggle(sender)
     }
 }
