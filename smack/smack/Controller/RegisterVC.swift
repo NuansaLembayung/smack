@@ -31,6 +31,6 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func exitBtnPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: BACK_CHANNEL, sender: sender)
     }
 }

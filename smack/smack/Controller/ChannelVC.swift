@@ -11,6 +11,7 @@ import UIKit
 class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var channelTable: UITableView!
+    @IBAction func prepareForUnwind(segue:UIStoryboardSegue) {}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ChannelCell", for: indexPath)
+        return cell
     }
 }

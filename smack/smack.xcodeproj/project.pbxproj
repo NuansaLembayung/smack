@@ -27,6 +27,10 @@
 		30F3E2B71F3F2030002AEC99 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3E2B61F3F2030002AEC99 /* RegisterVC.swift */; };
 		30F3E2B91F3F286A002AEC99 /* SmackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3E2B81F3F286A002AEC99 /* SmackBtn.swift */; };
 		30F3E2BB1F3F2ADF002AEC99 /* SmackTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3E2BA1F3F2ADF002AEC99 /* SmackTextField.swift */; };
+		30F6556C1F3FF6A20050CA60 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6556B1F3FF6A20050CA60 /* DataService.swift */; };
+		30F655721F3FFB5E0050CA60 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F655711F3FFB5E0050CA60 /* AvatarCell.swift */; };
+		30F655741F3FFB6F0050CA60 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F655731F3FFB6F0050CA60 /* ChatCell.swift */; };
+		30F655761F3FFC3E0050CA60 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F655751F3FFC3E0050CA60 /* Avatar.swift */; };
 		5DA403F97637599411EDB1CB /* Pods_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC43FD402CB0B948B599F471 /* Pods_smack.framework */; };
 		C381989DBCC421AD6B3BBE77 /* Pods_smackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5655F44918D001690DDCB34 /* Pods_smackTests.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +83,10 @@
 		30F3E2B61F3F2030002AEC99 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		30F3E2B81F3F286A002AEC99 /* SmackBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmackBtn.swift; sourceTree = "<group>"; };
 		30F3E2BA1F3F2ADF002AEC99 /* SmackTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmackTextField.swift; sourceTree = "<group>"; };
+		30F6556B1F3FF6A20050CA60 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		30F655711F3FFB5E0050CA60 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		30F655731F3FFB6F0050CA60 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		30F655751F3FFC3E0050CA60 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		3C09189FA3BBB34B8BF05225 /* Pods-smackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-smackUITests/Pods-smackUITests.release.xcconfig"; sourceTree = "<group>"; };
 		586654493FE2C522E9805BEE /* Pods_smackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C018CC60C111897EF5F32FDA /* Pods-smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 				3087B9AE1F3CB91F00E99EC8 /* Controller */,
 				3087B9AD1F3CB91C00E99EC8 /* View */,
 				3087B9AC1F3CB91800E99EC8 /* Model */,
+				30F6556A1F3FF60E0050CA60 /* Data Service */,
 				3087B9AB1F3CB90B00E99EC8 /* Supporting Files */,
 				3087B97D1F3CB87100E99EC8 /* AppDelegate.swift */,
 				3087B9811F3CB87100E99EC8 /* Main.storyboard */,
@@ -188,6 +197,7 @@
 				30190D7C1F3F484200034DBC /* Channel.swift */,
 				30190D7E1F3F484F00034DBC /* Chat.swift */,
 				30190D801F3F488F00034DBC /* Account.swift */,
+				30F655751F3FFC3E0050CA60 /* Avatar.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +208,8 @@
 				3087B9B71F3EC93800E99EC8 /* GradientView.swift */,
 				30F3E2B81F3F286A002AEC99 /* SmackBtn.swift */,
 				30F3E2BA1F3F2ADF002AEC99 /* SmackTextField.swift */,
+				30F655711F3FFB5E0050CA60 /* AvatarCell.swift */,
+				30F655731F3FFB6F0050CA60 /* ChatCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +232,14 @@
 				30F3E2B41F3F1C92002AEC99 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		30F6556A1F3FF60E0050CA60 /* Data Service */ = {
+			isa = PBXGroup;
+			children = (
+				30F6556B1F3FF6A20050CA60 /* DataService.swift */,
+			);
+			path = "Data Service";
 			sourceTree = "<group>";
 		};
 		B98B0046FD28F975C8B2DA32 /* Frameworks */ = {
@@ -527,12 +547,16 @@
 				3087B9B31F3CC3D000E99EC8 /* ChatVC.swift in Sources */,
 				30190D811F3F488F00034DBC /* Account.swift in Sources */,
 				30190D7F1F3F484F00034DBC /* Chat.swift in Sources */,
+				30F655741F3FFB6F0050CA60 /* ChatCell.swift in Sources */,
 				30F3E2B71F3F2030002AEC99 /* RegisterVC.swift in Sources */,
 				30190D7D1F3F484200034DBC /* Channel.swift in Sources */,
 				30F3E2B91F3F286A002AEC99 /* SmackBtn.swift in Sources */,
 				3087B9B51F3CC3DD00E99EC8 /* ChannelVC.swift in Sources */,
 				30F3E2B21F3F1886002AEC99 /* LoginVC.swift in Sources */,
 				3087B9B81F3EC93800E99EC8 /* GradientView.swift in Sources */,
+				30F6556C1F3FF6A20050CA60 /* DataService.swift in Sources */,
+				30F655721F3FFB5E0050CA60 /* AvatarCell.swift in Sources */,
+				30F655761F3FFC3E0050CA60 /* Avatar.swift in Sources */,
 				30190D831F3F48E900034DBC /* AvatarVC.swift in Sources */,
 				30F3E2B51F3F1C92002AEC99 /* Constants.swift in Sources */,
 				3087B97E1F3CB87100E99EC8 /* AppDelegate.swift in Sources */,

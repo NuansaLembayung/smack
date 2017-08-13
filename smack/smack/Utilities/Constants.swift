@@ -12,3 +12,4 @@ import Foundation
 let TO_LOGIN = "LoginVCSegue"
 let TO_REGISTER = "RegisterVCSegue"
 let TO_AVATAR = "AvatarVCSegue"
+let BACK_CHANNEL = "ChannelVCUnwind"
