@@ -52,7 +52,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JvM-l9-zDR" customClass="SmackTextField" customModule="smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="60" width="300" height="50"/>
@@ -61,7 +61,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -157,7 +157,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gqc-4t-6rL" customClass="SmackTextField" customModule="smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="60" width="300" height="50"/>
@@ -166,7 +166,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uBW-70-ywW" customClass="SmackTextField" customModule="smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="120" width="300" height="50"/>
@@ -175,7 +175,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -624,6 +624,8 @@
                     <connections>
                         <outlet property="chatTable" destination="UG1-GS-2tv" id="mMq-iN-VLB"/>
                         <outlet property="menuBtn" destination="B7I-J2-blW" id="uHY-KA-iMl"/>
+                        <outlet property="messageTextField" destination="wCN-Ow-UmR" id="moc-af-v0d"/>
+                        <outlet property="sendBtn" destination="hfh-nB-rb1" id="sBk-89-i02"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLa-TG-rPW" userLabel="First Responder" sceneMemberID="firstResponder"/>

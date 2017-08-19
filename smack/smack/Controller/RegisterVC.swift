@@ -16,8 +16,7 @@ class RegisterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
     }
 
     @IBAction func chooseAvatarBtnPressed(_ sender: Any) {
@@ -25,9 +24,18 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func generateBtnPressed(_ sender: Any) {
+        
     }
     
     @IBAction func createBtnPressed(_ sender: Any) {
+        guard let email = emailTextField.text, emailTextField.text != "" else { return }
+        guard let password = passwordTextField.text , passwordTextField.text != "" else { return }
+        
+        AuthService.instance.registerUser(email: email, password: password) { (success) in
+            if success {
+                print("registered user")
+            }
+        }
     }
     
     @IBAction func exitBtnPressed(_ sender: Any) {

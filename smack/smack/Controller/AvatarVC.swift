@@ -40,9 +40,26 @@ class AvatarVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
             return AvatarCell()
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        if (avatarSelection.selectedSegmentIndex == 0) {
+//            let selectedAvatar = DataService.instance.darkAvatars[indexPath.row]
+//        } else {
+//            let selectedAvatar = DataService.instance.lightAvatars[indexPath.row]
+//        }
+//        performSegue(withIdentifier: BACK_REGISTER, sender: selectedAvatar)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let registerVC = segue.destination as? RegisterVC {
+            assert(sender as? Avatar != nil)
+            let avatar = sender as! Avatar
+            registerVC.avatarImage.image = UIImage(named: avatar.name)
+        }
+    }
 
     @IBAction func avatarSCPressed(_ sender: Any) {
-        print(avatarSelection.selectedSegmentIndex)
+        avatarCollectionView.reloadData()
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
