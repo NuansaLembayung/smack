@@ -25,3 +25,8 @@ let BACK_CHANNEL = "ChannelVCUnwind"
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
+
+//HeaderB
+let HEADER = [
+    "Content-Type": "application/json; charset=utf-8"
+]

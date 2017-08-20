@@ -16,8 +16,18 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
     }
+    
     @IBAction func loginBtnPressed(_ sender: Any) {
+        guard let username = usernameTextField.text , usernameTextField.text != "" else { return }
+        guard let password = passwordTextField.text , passwordTextField.text != "" else { return }
         
+        AuthService.instance.loginUser(email: username, password: password) { (success) in
+            if (success) {
+                print("success!!!", AuthService.instance.authToken)
+            } else {
+                print("failed!!!")
+            }
+        }
     }
     
     @IBAction func signUpBtnPressed(_ sender: Any) {

@@ -33,7 +33,9 @@ class RegisterVC: UIViewController {
         
         AuthService.instance.registerUser(email: email, password: password) { (success) in
             if success {
-                print("registered user")
+                print("register success")
+            } else {
+                print("register failed")
             }
         }
     }
